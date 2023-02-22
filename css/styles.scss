@@ -1,0 +1,174 @@
+.footer {
+  display: flex;
+  background-color: #7CBFBC;
+
+
+  &-form {
+    flex: 1;
+    margin-right: 20px;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .form-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        input[type="email"] {
+          flex: 1;
+          margin-right: 10px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        button[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+
+  &-social {
+    flex: 1;
+
+    .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 10px;
+        list-style-type: none;
+
+
+        a {
+          display: block;
+          font-size: 20px;
+          color: #333;
+
+          &:hover {
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.overskrift{
+  margin: auto;
+  padding: 50px;
+}
+
+.Billede1{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst1{
+  padding: 25px;
+}
+
+.Billede2{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst2{
+  padding: 25px;
+}
+
+.Billede3{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst3{
+  padding: 25px;
+}
+
+.Billede4{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst4{
+  padding: 25px;
+}
+
+.Billede5{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst5{
+  padding: 25px;
+}
+
+.Billede6{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst6{
+  padding: 25px;
+}
+
+.Billede7{
+  float: left;
+  width: 500px;
+  padding: 25px;
+}
+
+.Billedetekst7{
+  padding: 25px;
+}
+
+.bd-placeholder-img{
+  background-image: url(https://downloads.sangenshus.dk/Website/wp-content/uploads/2022/03/220127SangensHus00095.jpg)
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .jumbotron .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

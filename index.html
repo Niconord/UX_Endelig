@@ -1,0 +1,324 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <meta charset="utf-8">
+
+    <title>Sigende titel</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #fff6e8;
+        }
+
+        .shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #rectangle1 {
+            background-color: #7CBFBC;
+            width: 150px;
+            height: 400px;
+            position: absolute;
+            top: 200px;
+            right: 100px;
+            border-radius: 50px;
+            transform: rotate(40deg);
+            opacity: 50%;
+            background: linear-gradient(to right, #7CBFBC, #FEA9A1);
+        }
+
+        #triangle1 {
+            width: 0;
+            height: 0;
+            border-bottom: 200px solid #F6C547;
+            border-left: 100px solid transparent;
+            position: absolute;
+            bottom: 150px;
+            left: 50px;
+            transform: rotate(60deg);
+            opacity: 30%;
+        }
+
+        #circle2 {
+            background-color: #F6C547;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 375px;
+            left: 50px;
+            background: linear-gradient(to right, #7CBFBC,#C39E40, #FEA9A1);
+            opacity: 70%;
+        }
+
+        #rectangle2 {
+            background-color: #C39E40;
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            bottom: 100px;
+            left: 150px;
+            transform: rotate(-25deg);
+            border-radius: 50px;
+            opacity: 50%;
+            background: linear-gradient(to right, #fff6e8,#C39E40, #FEA9A1);
+        }
+
+        #triangle2 {
+            width: 0;
+            height: 0;
+            border-top: 200px solid #7CBFBC;
+            border-right: 100px solid transparent;
+            position: absolute;
+            bottom: 150px;
+            right: 100px;
+            opacity: 60%;
+        }
+
+        #circle3 {
+            background-color: #FEA9A1;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            transform: rotate(170deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+
+        #circle4 {
+            background-color: #FEA9A1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 330px;
+            left: 300px;
+            transform: rotate(170deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+
+        #circle5 {
+            background-color: #FEA9A1;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            transform: rotate(170deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+
+        #circle6 {
+            background-color: #FEA9A1;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: absolute;
+            top: 250px;
+            left: 275px;
+            transform: rotate(170deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+
+        #circle7 {
+            background-color: #FEA9A1;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 375px;
+            left: 270px;
+            transform: rotate(190deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+
+        #circle8 {
+            background-color: #FEA9A1;
+            width: 30px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 140px;
+            left: 100px;
+            transform: rotate(230deg);
+            opacity: 70%;
+            background: linear-gradient(to right, #FEA9A1, #7CBFBC);
+        }
+    </style>
+
+</head>
+
+<div class="shape" id="circle1"></div>
+<div class="shape" id="rectangle1"></div>
+<div class="shape" id="triangle1"></div>
+<div class="shape" id="circle2"></div>
+<div class="shape" id="rectangle2"></div>
+<div class="shape" id="triangle2"></div>
+<div class="shape" id="circle3"></div>
+<div class="shape" id="circle4"></div>
+<div class="shape" id="circle5"></div>
+<div class="shape" id="circle6"></div>
+<div class="shape" id="circle7"></div>
+<div class="shape" id="circle8"></div>
+
+
+
+
+<body>
+<header class="container-fluid p-3 mb-3 col-12 border-bottom bg-transparent position-fixed">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="http://NJDesign.dk/UX" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="images/blåtlogo.png" alt="SandkraftLogo" width="200" height="100">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center justify-content-md-end mb-md-0 d-none d-lg-flex">
+                <li><a href="http://NJDesign.dk/UX" class="nav-link px-2 link-dark">Forside</a></li>
+                <li><a href="http://rikkeolsen.dk/ux" class="nav-link px-2 link-dark">Shop</a></li>
+                <li><a href="http://NJDesign.dk/Parihan_2" class="nav-link px-2 link-dark">Om Sangkraft</a></li>
+                <li><a href="http://NJDesign.dk/Parihan_1" class="nav-link px-2 link-dark">Syng i Guldborgsund</a></li>
+                <li><a href="http://phill-media.dk/SangkraftBegivenheder" class="nav-link px-2 link-dark">Begivenheder</a></li>
+                <li><a href="http://phill-media.dk/SangkraftProjekter" class="nav-link px-2 link-dark">Projekter</a></li>
+            </ul>
+
+            <div class="dropdown text-end justify-content-end ms-auto d-lg-none">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle justify-content-end" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a href="http://njdesign.dk/UX"><button class="dropdown-item" type="button">Forside</button></a></li>
+                    <li><a href="http://rikkeolsen.dk/ux"><button class="dropdown-item" type="button">Shop</button></a></li>
+                    <li><a href="http://NJDesign.dk/Parihan_2"><button class="dropdown-item" type="button">Om Sangkraft</button></a></li>
+                    <li><a href="http://NJDesign.dk/Parihan_1"><button class="dropdown-item" type="button">Syng i Guldborgsund</button></a></li>
+                    <li><a href="http://phill-media.dk/SangkraftBegivenheder"><button class="dropdown-item" type="button">Begivenheder</button></a></li>
+                    <li><a href="http://phill-media.dk/SangkraftProjekter">Projekter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="jumbotron-fluid" style="background-image: url('images/Sanghus.jpg'); background-size: cover; background-position: center; padding: 10rem;">
+    <div class="p-5 text-black text-start bg-light bg-opacity-50">
+        <h1 class="display-4" style="font-family: Helvetica">Sangkraft med Guldborgsund</h1>
+        <p class="lead" style="font-family: Helvetica">Flere stemmer - én kraft!</p>
+        <p style="font-family: Helvetica; font-size: 1.2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button" style="font-family: Helvetica; font-size: 1.2rem;">Læs mere om fællesskabet her</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="row p-5">
+    <div class="col-lg-6">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <defs>
+                <clipPath id="circle">
+                    <circle cx="70" cy="70" r="70"/>
+                </clipPath>
+            </defs>
+            <image href="http://rikkeolsen.dk/ux/images/tote%20hvidblue.png" width="140" height="140" clip-path="url(#circle)"/>
+        </svg>
+        <h2 class="fw-normal">Shop</h2>
+        <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+        <p><a class="btn btn-secondary" href="#">HEJ</a></p>
+    </div>
+    <div class="col-lg-6">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <defs>
+                <clipPath id="circle">
+                    <circle cx="70" cy="70" r="70"/>
+                </clipPath>
+            </defs>
+            <image href="https://downloads.sangenshus.dk/Website/wp-content/uploads/2022/03/220127SangensHus00095.jpg" width="140" height="140" clip-path="url(#circle)"/>
+        </svg>
+        <h2 class="fw-normal">Begivenheder</h2>
+        <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum.</p>
+        <p><a class="btn btn-secondary" href="#">HEJ 2</a></p>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="footer col-12 justify-content-center">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="footer-form">
+            <form action="#" method="post">
+                <label for="email-input">TILMELD DIG NYHEDSBREVET</label>
+                <div class="form-inputs">
+                    <input type="email" id="email-input" name="email" placeholder="Email adresse">
+                    <button type="submit" class="mt-2 mt-md-0">Indsend</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© Sandkraft Guldborgsund</span>
+        </div>
+
+
+
+
+        <ul class="nav col-md-4 justify-content-end d-flex justify-content-end text-decoration-none">
+            <li><a href="http://facebook.com"><i class="fa fa-facebook" style="padding: 5px; color: black;"></i></a></li>
+            <li><a href="http://twitter.com"><i class="fa fa-twitter" style="padding: 5px; color: black;"></i></a></li>
+            <li><a href="http://instagram.com"><i class="fa fa-instagram" style="padding: 5px; color: black;"></i></a></li>
+            <li><a href="http://youtube"><i class="fa fa-youtube" style="padding: 5px; color: black;"></i></a></li>
+        </ul>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+    </footer>
+</div>
+
+</body>
+</html>
