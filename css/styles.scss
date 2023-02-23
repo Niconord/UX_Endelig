@@ -82,86 +82,20 @@
 
 
 
-.overskrift{
-  margin: auto;
-  padding: 50px;
-}
-
-.Billede1{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst1{
-  padding: 25px;
-}
-
-.Billede2{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst2{
-  padding: 25px;
-}
-
-.Billede3{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst3{
-  padding: 25px;
-}
-
-.Billede4{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst4{
-  padding: 25px;
-}
-
-.Billede5{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst5{
-  padding: 25px;
-}
-
-.Billede6{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst6{
-  padding: 25px;
-}
-
-.Billede7{
-  float: left;
-  width: 500px;
-  padding: 25px;
-}
-
-.Billedetekst7{
-  padding: 25px;
-}
 
 .bd-placeholder-img{
   background-image: url(https://downloads.sangenshus.dk/Website/wp-content/uploads/2022/03/220127SangensHus00095.jpg)
 }
 
-@media (max-width: 767px) {
+
+
+@media (max-width: 768px) {
+  .jumbotron-fluid .row {
+    width: 100%;
+    max-width: none;
+
+  }
+}
   .jumbotron h1 {
     font-size: 2rem;
   }
@@ -173,4 +107,3 @@
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
   }
-}
