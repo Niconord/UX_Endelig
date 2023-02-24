@@ -176,6 +176,14 @@
             background: linear-gradient(to right, #FEA9A1, #7CBFBC);
         }
 
+h1, h2, h3 {
+    font-family: "Helvetica", serif;
+    font-size: 1.5vh;
+}
+
+p {
+    font-family: "Helvetica", sans-serif;
+}
 
 </style>
 
@@ -235,7 +243,7 @@
 <div class="jumbotron-fluid" style="background-image: url('images/Sanghus.jpg'); background-size: cover; background-position: center;">
         <div class="row col-12">
             <div class="col-8 h-100 text-black text-start align-items-center bg-light bg-opacity-75 border rounded-3 p-5 mx-auto py-5" style="margin-top: 20vh; margin-bottom: 20vh;">
-                <h1 class="display-4" style="font-family: Helvetica">Flere stemmer - én kraft!</h1>
+                <h1 class="display-4">Flere stemmer - én kraft!</h1>
                 <p style="font-family: Helvetica;">Vi vil have mere sang i hverdagen</p>
                 <p style="font-family: Helvetica; font-size: 3vh;">Vores Vision</p>
                 <ul class="text-start">
@@ -265,7 +273,7 @@
             </defs>
             <image href="http://rikkeolsen.dk/ux/images/tote%20hvidblue.png" width="140" height="140" clip-path="url(#circle)"/>
         </svg>
-        <h2 class="fw-normal">Shop</h2>
+        <h2 class="fw-normal p-3" style="font-size: 2vh;">Shop</h2>
         <p>Sangkraft muleposer er netop landet. Så hvis du vil have en bæredygtig mulepose eller en fed t-shirt - og samtidig støtte op om fællesskabet, så kig her!</p>
         <p><a class="btn btn-secondary" href="http://rikkeolsen.dk/ux/" style="background-color: #C39E40;">Sangkraft merchandise</a></p>
     </div>
@@ -279,55 +287,37 @@
             </defs>
             <image href="https://downloads.sangenshus.dk/Website/wp-content/uploads/2022/03/220127SangensHus00095.jpg" width="140" height="140" clip-path="url(#circle)"/>
         </svg>
-        <h2 class="fw-normal">Begivenheder</h2>
+        <h2 class="fw-normal p-3" style="font-size: 2vh;">Begivenheder</h2>
         <p>Vi afholder løbende begivenheder lokalt i Guldborgsund. Du kan se kommende begivenheder her og lære mere om deltagelse</p>
         <p><a class="btn btn-secondary" href="http://phill-media.dk/SangkraftBegivenheder" style="background-color: #C39E40;">Kommende begivenheder</a></p>
     </div>
 
 </div>
 
-
-
-
-<div class="footer col-12 justify-content-center">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="footer-form">
-            <form action="#" method="post">
-                <label for="email-input">TILMELD DIG NYHEDSBREVET</label>
-                <div class="form-inputs">
-                    <input type="email" id="email-input" name="email" placeholder="Email adresse">
-                    <button type="submit" class="mt-2 mt-md-0">Indsend</button>
+<div class="container-fluid justify-content-center" style=" display: flex; background-color: #7CBFBC;">
+    <footer class="col-8 d-flex flex-wrap align-items-center py-3 my-4 border-top">
+        <div class="footer-form col-12 col-md-4 d-flex align-items-center">
+            <form action="#" method="post" style="display: flex; flex-wrap: wrap; align-items: center;">
+                <label for="email-input1" style="font-weight: bold; font-size: 14px;">TILMELD DIG NYHEDSBREVET</label>
+                <div class="form-inputs" style="display: flex; flex-wrap: wrap; align-items: center; padding: 5px;">
+                    <input type="email" id="email-input1" name="email" placeholder="Email adresse" style="flex: 1; padding: 10px; border: none; border-radius: 5px; font-size: 16px;">
+                    <button type="submit" class="mt-2 mt-md-0" style="background-color: #333; color: #fff; border: none; border-radius: 5px; padding: 10px; cursor: pointer;">Indsend</button>
                 </div>
             </form>
         </div>
 
-
-
-
-
-
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
+        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center order-3">
             <span class="mb-3 mb-md-0 text-muted">© Sangkraft Guldborgsund</span>
         </div>
 
-
-
-
-        <ul class="nav col-md-4 justify-content-end d-flex justify-content-end text-decoration-none">
-            <li><a href="http://facebook.com"><i class="fa fa-facebook" style="padding: 5px; color: black;"></i></a></li>
-            <li><a href="http://twitter.com"><i class="fa fa-twitter" style="padding: 5px; color: black;"></i></a></li>
-            <li><a href="http://instagram.com"><i class="fa fa-instagram" style="padding: 5px; color: black;"></i></a></li>
-            <li><a href="http://youtube"><i class="fa fa-youtube" style="padding: 5px; color: black;"></i></a></li>
-        </ul>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end order-1 order-md-3">
+            <ul class="nav list-unstyled d-flex">
+                <li><a href="http://facebook.com"><i class="fa fa-facebook" style="padding: 5px; color: black;"></i></a></li>
+                <li><a href="http://twitter.com"><i class="fa fa-twitter" style="padding: 5px; color: black;"></i></a></li>
+                <li><a href="http://instagram.com"><i class="fa fa-instagram" style="padding: 5px; color: black;"></i></a></li>
+                <li><a href="http://youtube"><i class="fa fa-youtube" style="padding: 5px; color: black;"></i></a></li>
+            </ul>
+        </div>
     </footer>
 </div>
 
